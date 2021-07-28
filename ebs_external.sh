@@ -18,7 +18,7 @@
 ##################
 # Change these accordingly:
 AWS_CLI=/bin/aws
-REGION=us-west-2
+REGION=${EC2_AWSAVZONE::-1}
 FS_USAGE=10
 PERCENTAGE_INCREASE=10
 MAX_EBS_SIZE=250
