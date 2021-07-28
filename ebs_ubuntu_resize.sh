@@ -20,7 +20,7 @@
 sudo apt-get update
 sudo apt-get install awscli -y
 AWS_CLI=/usr/bin/aws
-REGION=us-west-2
+REGION=${EC2_AWSAVZONE::-1}
 FS_USAGE=10
 PERCENTAGE_INCREASE=10
 MAX_EBS_SIZE=250
